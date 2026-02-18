@@ -1,0 +1,21 @@
+{
+  "short_name": "大自在體育",
+  "name": "大自在體育用品：羽球線介紹",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0f172a",
+  "background_color": "#f8fafc"
+}

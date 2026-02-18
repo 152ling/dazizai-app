@@ -3,7 +3,7 @@ import {
   ChevronLeft, Info, ShoppingCart, Tag, Zap, 
   Target, MapPin, Phone, Clock, ExternalLink, HelpCircle, 
   BookOpen, Plus, Trash2, Scale, X, Search, Trophy, AlertCircle, Timer,
-  Store,DollarSign,ShieldCheck
+  Store,DollarSign,ShieldCheck, Star
 } from 'lucide-react';
 import { GiShuttlecock } from "react-icons/gi";
 import './App.css';
@@ -220,7 +220,8 @@ const APP_DATA = {
     "characteristics": "極致手感、卓越反彈、納米塗層",
     "gauge": "0.66mm",
     "description": "核心採用高強度多絲纖維，外部包覆納米材料塗層。0.66mm 的線徑帶來優異的反彈力與細膩的控球手感，適合技術型選手。",
-    "category": "高彈性"
+    "category": "高彈性",
+    "tag": "戴資穎指定拍線",
   },
   {
     "id": 13,
@@ -416,7 +417,7 @@ const APP_DATA = {
   }
 };
 
-const ProductImage = ({ src, alt, className = "h-48" }) => (
+const ProductImage = ({ src, alt, className = "h-48" , specialTag = null}) => (
   <div className={`${className} bg-white flex items-center justify-center rounded-lg overflow-hidden border border-gray-100 shadow-inner relative`}>
     {src ? (
       <img 
@@ -432,6 +433,12 @@ const ProductImage = ({ src, alt, className = "h-48" }) => (
       <div className="text-gray-300 flex flex-col items-center">
         <Zap size={32} className="mb-2 opacity-20" />
         <span className="text-[10px] px-2 text-center">{alt}</span>
+      </div>
+    )}
+    {specialTag && (
+      <div className="absolute top-2 left-2 flex items-center gap-1 bg-indigo-900/90 text-white px-2 py-1 rounded-lg shadow-lg backdrop-blur-sm border border-indigo-400/30 animate-in fade-in zoom-in duration-500">
+        <Star size={10} className="text-yellow-400 fill-yellow-400" />
+        <span className="text-[9px] font-black tracking-tight">{specialTag}</span>
       </div>
     )}
   </div>
@@ -602,7 +609,7 @@ const App = () => {
                 className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm relative group"
               >
                 <div onClick={() => handleProductClick(product)}>
-                  <ProductImage src={product.imgSrc} alt={product.name} className="h-40" />
+                  <ProductImage src={product.imgSrc} alt={product.name} specialTag={product.tag}  className="h-40" />
                   <div className="p-3">
                     <h3 className="font-bold text-sm line-clamp-1">{product.name}</h3>
                     <div className="flex items-center justify-between mt-2">
@@ -625,7 +632,7 @@ const App = () => {
         {/* VIEW: PRODUCT DETAIL */}
         {view === 'detail' && selectedProduct && (
           <div className="space-y-6">
-            <ProductImage src={selectedProduct.imgSrc} alt={selectedProduct.name} className="h-40" />
+            <ProductImage src={selectedProduct.imgSrc} alt={selectedProduct.name}  specialTag={selectedProduct.tag} className="h-40" />
             <div className="bg-white rounded-3xl p-6 shadow-sm border border-gray-100">
               <div className="flex justify-between items-start mb-4">
                 <div>

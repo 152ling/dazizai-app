@@ -72,7 +72,7 @@ const APP_DATA = {
     "brandName": "YONEX",
     "imgSrc": "/images/BG65.jpg",
     "name": "BG65",
-    "price": 350,
+    "price": 380,
     "colors": ["白", "黃", "橘", "寶藍", "土耳其藍"],
     "characteristics": "高展延、極佳耐用性",
     "gauge": "0.70mm",
@@ -85,12 +85,13 @@ const APP_DATA = {
     "brandName": "YONEX",
     "imgSrc": "/images/BG80.jpg",
     "name": "BG80",
-    "price": 400,
+    "price": 430,
     "colors": ["白"],
     "characteristics": "硬實感、高威力、強大進攻性",
     "gauge": "0.68mm",
     "description": "高模量向量纖維與橢圓形細絲結構，提供極佳的硬實感與爆發力，適合追求強力進攻與扎實手感的專業球員。",
-    "category": "威力型"
+    "category": "威力型",
+    "tag": "周天成指定拍線",
   },
   {
     "id": 3,
@@ -98,7 +99,7 @@ const APP_DATA = {
     "brandName": "YONEX",
     "imgSrc": "/images/BG66 ULTIMAX.jpg",
     "name": "BG66 Ultimax",
-    "price": 420,
+    "price": 400,
     "colors": ["白", "綠", "藍","螢光粉", "紅"],
     "characteristics": "極致彈性、擊球音清脆、高速度",
     "gauge": "0.65mm",
@@ -124,7 +125,7 @@ const APP_DATA = {
     "brandName": "YONEX",
     "imgSrc": "/images/EXBOLT 63.jpg",
     "name": "EXBOLT 63",
-    "price": 450,
+    "price": 370,
     "colors": ["白", "黃","薰衣草紫"],
     "characteristics": "極速回彈、鍛造纖維、高擊球音",
     "gauge": "0.63mm",
@@ -137,7 +138,7 @@ const APP_DATA = {
     "brandName": "YONEX",
     "imgSrc": "/images/EXBOLT 65.jpg",
     "name": "EXBOLT 65",
-    "price": 450,
+    "price": 370,
     "colors": ["白", "黃","綠","黑"],
     "characteristics": "全能回彈、控制力優、平衡性高",
     "gauge": "0.65mm",
@@ -150,7 +151,7 @@ const APP_DATA = {
     "brandName": "YONEX",
     "imgSrc": "/images/EXBOLT 68.jpg",
     "name": "EXBOLT 68",
-    "price": 450,
+    "price": 370,
     "colors": ["白色", "閃亮橘"],
     "characteristics": "耐磨性強、擊球扎實、長效性能",
     "gauge": "0.68mm",
@@ -163,7 +164,7 @@ const APP_DATA = {
     "brandName": "YONEX",
     "imgSrc": "/images/NANOGY 98.jpg",
     "name": "Nanogy 98",
-    "price": 450,
+    "price": 400,
     "colors": ["白色", "金黃"],
     "characteristics": "高回彈、納米塗層、控球細膩",
     "gauge": "0.66mm",
@@ -202,7 +203,7 @@ const APP_DATA = {
   "brandName": "VICTOR",
   "imgSrc": "/images/VBS-68 POWER.webp",
   "name": "VBS-68 POWER",
-  "price": 380,
+  "price": 350,
   "colors": ["白色", "螢光綠", "冷黑"],
   "characteristics": "高韌性、紮實進攻、力量傳導優",
   "gauge": "0.68mm",
@@ -215,7 +216,7 @@ const APP_DATA = {
     "brandName": "VICTOR",
     "imgSrc": "/images/VBS-66.webp",
     "name": "VBS-66 Nano",
-    "price": 380,
+    "price": 350,
     "colors": ["白色", "螢光綠", "亮橙", "粉紫"],
     "characteristics": "極致手感、卓越反彈、納米塗層",
     "gauge": "0.66mm",
@@ -229,7 +230,7 @@ const APP_DATA = {
     "brandName": "VICTOR",
     "imgSrc": "/images/VBS-63.webp",
     "name": "VBS-63",
-    "price": 400,
+    "price": 350,
     "colors": ["白色", "螢光黃", "粉色", "青藍"],
     "characteristics": "極速回彈、靈敏控制、輕快響亮",
     "gauge": "0.63mm",
@@ -242,7 +243,7 @@ const APP_DATA = {
     "brandName": "VICTOR",
     "imgSrc": "/images/VBS-61.webp",
     "name": "VBS-61",
-    "price": 420,
+    "price": 350,
     "colors": ["白色", "黃色", "藍色"],
     "characteristics": "頂尖彈性、極速反應、極細線徑",
     "gauge": "0.61mm",
@@ -255,7 +256,7 @@ const APP_DATA = {
     "brandName": "VICTOR",
     "imgSrc": "/images/VBS-58.webp",
     "name": "VBS-58",
-    "price": 450,
+    "price": 350,
     "colors": ["粉色"],
     "characteristics": "巔峰回彈、高強韌性、極致細線",
     "gauge": "0.58mm",
@@ -267,7 +268,7 @@ const APP_DATA = {
     "brandName": "VICTOR",
     "imgSrc": "/images/VS-61.webp",
     "name": "VS-61",
-    "price": 420,
+    "price": 280,
     "colors": ["白色", "螢光黃"],
     "characteristics": "極細線徑、極速反彈、清脆音效",
     "gauge": "0.61mm",
@@ -280,7 +281,7 @@ const APP_DATA = {
     "brandName": "VICTOR",
     "imgSrc": "/images/VS-65.webp",
     "name": "VS-65",
-    "price": 380,
+    "price": 280,
     "colors": ["白", "黃", "橘"],
     "characteristics": "手感柔韌、精準控制、全能表現",
     "gauge": "0.65mm",
@@ -293,7 +294,7 @@ const APP_DATA = {
     "brandName": "KIZUNA",
     "imgSrc": "/images/Z66.webp",
     "name": "Z66 Lusty",
-    "price": 320,
+    "price": 430,
     "colors": ["白", "黃", "紅"],
     "characteristics": "W Power 雙重動力、超高彈性、PPS纖維",
     "gauge": "0.66mm",
@@ -306,7 +307,7 @@ const APP_DATA = {
     "brandName": "KIZUNA",
     "imgSrc": "/images/Z63X.webp",
     "name": "Z63X Premium",
-    "price": 350,
+    "price": 430,
     "colors": ["白", "黃", "粉", "青綠"],
     "characteristics": "極速回彈、清脆擊球音、極細耐用平衡",
     "gauge": "0.63mm",
@@ -319,7 +320,7 @@ const APP_DATA = {
     "brandName": "KIZUNA",
     "imgSrc": "/images/Z65.webp",
     "name": "Z65 Premium",
-    "price": 320,
+    "price": 350,
     "colors": ["桃紅"],
     "characteristics": "耐久控制、剛柔並濟、傳統手感",
     "gauge": "0.65mm",
@@ -332,7 +333,7 @@ const APP_DATA = {
     "brandName": "KIZUNA",
     "imgSrc": "/images/Z69.webp",
     "name": "Z69 Premium",
-    "price": 300,
+    "price": 350,
     "colors": ["白色", "紅色","黑色"],
     "characteristics": "極致耐用、柔和手感、穩定控球",
     "gauge": "0.69mm",
@@ -358,7 +359,7 @@ const APP_DATA = {
     "brandName": "TOALSON",
     "imgSrc": "/images/ION65.jpg",
     "name": "ION 65",
-    "price": 300,
+    "price": 340,
     "colors": ["白", "黃", "藍", "水藍", "綠","桃紅","黑"],
     "characteristics": "全方位滿格、高彈力、清脆金屬音",
     "gauge": "0.65mm",
@@ -371,12 +372,37 @@ const APP_DATA = {
     "brandName": "TOALSON",
     "imgSrc": "/images/ION68.jpg",
     "name": "ION 68",
-    "price": 320,
+    "price": 340,
     "colors": ["白", "黃"],
     "characteristics": "極速回彈、耐用提升、響亮鞭擊音",
     "gauge": "0.68mm",
     "description": "ION 系列中兼顧耐用與手感的經典之作。擊球時會發出強烈的響亮鞭擊聲，增加擊球快感。其出色的張力維持能力與穩定的控球表現，是許多進階選手長期的首選線材。",
     "category": "耐用攻擊型"
+  },{
+    "id": 25,
+    "brandId": "yonex",
+    "brandName": "YONEX",
+    "imgSrc": "/images/AEROBITE.jpg",
+    "name": "AEROBITE",
+    "price": 410,
+    "colors": ["藍", "綠"],
+    "characteristics": "強烈旋轉、極致控制、子母線系統",
+    "gauge": "直 0.67mm / 橫 0.61mm",
+    "description": "YONEX 首款子母線設計，直線採用高摩擦力的聚氨酯塗層增加抓球感，橫線則使用極細線徑提升彈性。這種組合能產生強烈的切球旋轉並提供精準的落點控制，是技術型選手的最佳武器。",
+    "category": "控制型"
+  },
+  {
+    "id": 26,
+    "brandId": "victor",
+    "brandName": "VICTOR",
+    "imgSrc": "/images/VS-69.webp",
+    "name": "VS-69",
+    "price": 300,
+    "colors": ["粉", "黃", "藍"],
+    "characteristics": "高耐用性、穩定控制、經濟實惠",
+    "gauge": "0.69mm",
+    "description": "採用高強度多絲纖維搭配特殊的耐磨塗層技術。0.69mm 的均衡線徑在維持良好耐用度的同時，提供了柔和且紮實的擊球感受。其優異的保磅性與穩定的控球表現，是追求高性價比球友的理想選擇。",
+    "category": "耐用型"
   }
 ],
   knowledge: [
@@ -411,7 +437,7 @@ const APP_DATA = {
   shop: {
     name: "大自在體育用品",
     address: "桃園市中壢區新中北路223號",
-    phone: "03-4387228",
+    phone: "03-4372287",
     businessHours: "12:00 - 21:00",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2075890349006!2d121.23933969999999!3d24.959050899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468223dfdd6ce23%3A0x43fd165be5bddc9c!2z5aSn6Ieq5Zyo6YGL5YuV57K-5ZOB5bCI6LOj5bqX!5e0!3m2!1szh-TW!2stw!4v1771232828273!5m2!1szh-TW!2stw"
   }
@@ -453,7 +479,11 @@ const App = () => {
     // PWA 安裝相關 State
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isInstallable, setIsInstallable] = useState(false);
-
+  // 功能：切換頁面時自動回到最上方
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [view]);
+  
   // PWA 註冊與安裝偵測
   useEffect(() => {
     // 註冊 Service Worker
@@ -538,7 +568,7 @@ const App = () => {
           )}
           <h1 className="text-lg font-bold flex-1 text-center">
             {view === 'home' || view === 'list' || view === 'detail' ? '精選拍線' : 
-             view === 'knowledge' ? '穿線服務收費' : 
+             view === 'knowledge' ? '穿線趕拍收費' : 
              view === 'compare' ? '拍線比較清單' :
              '關於大自在'}
           </h1>
@@ -596,6 +626,15 @@ const App = () => {
                   </div>
                 </button>
               ))}
+            </div>
+                        {/* Price Warning Hint */}
+            <div className="bg-amber-50 border border-amber-100 p-5 rounded-2xl flex gap-3 shadow-sm">
+              <Info className="text-amber-500 shrink-0 mt-0.5" size={20} />
+              <div className="text-xs text-amber-800 leading-relaxed">
+                <p className="font-bold mb-1">💡 穿線服務提醒：</p>
+                    本價格為拍線含換線工資，若需趕拍服務將另酌收<button onClick={() => setView('knowledge')} className="mx-1 font-black underline  hover:text-amber-600 transition-colors cursor-pointer">NT$100-250</button>不等。
+                    <br/>若單購買拍線不穿線，價格減NT$190。
+              </div>
             </div>
           </div>
         )}
@@ -702,9 +741,10 @@ const App = () => {
             <div className="bg-amber-50 border border-amber-100 p-5 rounded-2xl flex gap-3 shadow-sm">
               <Info className="text-amber-500 shrink-0 mt-0.5" size={20} />
               <div className="text-xs text-amber-800 leading-relaxed">
-                <p className="font-bold mb-1">💡 換線服務提醒：</p>
-                本價格為拍線含現場換線工資，若需趕拍服務將另酌收<span className="font-bold underline">NT$100-250</span>不等。建議依個人力量程度與球拍規格選擇適合磅數。
-              </div>
+                <p className="font-bold mb-1">💡 穿線服務提醒：</p>
+                  本價格為拍線含換線工資，若需趕拍服務將另酌收<button onClick={() => setView('knowledge')} className="mx-1 font-black underline  hover:text-amber-600 transition-colors cursor-pointer">NT$100-250</button>不等。
+                    <br/>若單購買拍線不穿線，價格減NT$190。
+                </div>
             </div>
           </div>
         )}
@@ -916,7 +956,7 @@ const App = () => {
       <nav className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-gray-100 px-6 py-3 flex justify-around items-center max-w-2xl mx-auto shadow-[0_-5px_20px_rgba(0,0,0,0.05)] z-40">
         <FooterItem active={view === 'home' || view === 'list' || view === 'detail'} icon={Zap} label="精選拍線" onClick={() => setView('home')} />
         <FooterItem active={view === 'compare'} icon={Scale} label="拍線比較" onClick={() => setView('compare')} />
-        <FooterItem active={view === 'knowledge'} icon={DollarSign} label="穿線價格" onClick={() => setView('knowledge')} />
+        <FooterItem active={view === 'knowledge'} icon={DollarSign} label="穿線趕拍價格" onClick={() => setView('knowledge')} />
         <FooterItem active={view === 'about'} icon={Store} label="關於大自在" onClick={() => setView('about')} />
       </nav>
     </div>

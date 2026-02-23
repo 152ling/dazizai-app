@@ -6,6 +6,7 @@ import {
   Store,DollarSign,ShieldCheck, Star
 } from 'lucide-react';
 import { GiShuttlecock } from "react-icons/gi";
+import { FaLine } from "react-icons/fa";
 import './App.css';
 
 
@@ -17,7 +18,7 @@ const COLOR_THEMES = {
   // 黃色系
   '黃': 'bg-yellow-400 text-slate-900',
   '黃色': 'bg-yellow-400 text-slate-900',
-  '螢光黃': 'bg-[#e5f331] text-slate-900',
+  '螢光黃': 'bg-yellow-300 text-slate-900',
   '金黃': 'bg-amber-400 text-slate-900',
   // 橘色系
   '橘': 'bg-orange-500 text-white',
@@ -33,6 +34,8 @@ const COLOR_THEMES = {
   '藍色': 'bg-blue-600 text-white',
   '寶藍': 'bg-blue-800 text-white',
   '淺藍': 'bg-blue-300 text-slate-900',
+  '深藍': 'bg-blue-900 text-white',
+  '紫藍': 'bg-indigo-400 text-white',
   '青藍': 'bg-cyan-500 text-white',
   '土耳其藍': 'bg-cyan-600 text-white',
   // 綠色系
@@ -45,6 +48,8 @@ const COLOR_THEMES = {
   '粉色': 'bg-pink-400 text-white',
   '螢光粉': 'bg-pink-500 text-white',
   '霓虹粉': 'bg-fuchsia-500 text-white',
+  '玫瑰粉': 'bg-rose-400 text-white',
+  '櫻花粉': 'bg-red-300 text-white',
   // 紫色系
   '薰衣草紫': 'bg-purple-300 text-slate-900',
   '粉紫': 'bg-purple-400 text-white',
@@ -100,7 +105,7 @@ const APP_DATA = {
     "imgSrc": "/images/BG66 ULTIMAX.jpg",
     "name": "BG66 Ultimax",
     "price": 400,
-    "colors": ["白", "綠", "藍","螢光粉", "紅"],
+    "colors": ["白", "黃", "深藍","粉", "紅"],
     "characteristics": "極致彈性、擊球音清脆、高速度",
     "gauge": "0.65mm",
     "description": "結合極細線徑與高強度尼龍，在彈性、控制力與擊球音之間達到完美平衡，是追求速度感的選手之首選。",
@@ -178,7 +183,7 @@ const APP_DATA = {
     "imgSrc": "/images/VBS-70.webp",
     "name": "VBS-70",
     "price": 300,
-    "colors": ["紅", "冷綠", "螢光黃", "白","淺藍"],
+    "colors": ["白", "冷綠", "螢光黃", "紅","淺藍","寶藍"],
     "characteristics": "高耐用、優異控球、手感扎實",
     "gauge": "0.70mm",
     "description": "採用高強度尼龍複絲為芯層，特殊的編織技術提升耐用性，並在擊球時提供穩定的控制感，是專為追求極致耐用度的選手所設計。",
@@ -217,7 +222,7 @@ const APP_DATA = {
     "imgSrc": "/images/VBS-66.webp",
     "name": "VBS-66 Nano",
     "price": 350,
-    "colors": ["白色", "螢光綠", "亮橙", "粉紫"],
+    "colors": ["白", "橘", "黃","綠","淺藍","寶藍", "玫瑰粉","櫻花粉"],
     "characteristics": "極致手感、卓越反彈、納米塗層",
     "gauge": "0.66mm",
     "description": "核心採用高強度多絲纖維，外部包覆納米材料塗層。0.66mm 的線徑帶來優異的反彈力與細膩的控球手感，適合技術型選手。",
@@ -244,7 +249,7 @@ const APP_DATA = {
     "imgSrc": "/images/VBS-61.webp",
     "name": "VBS-61",
     "price": 350,
-    "colors": ["白色", "黃色", "藍色"],
+    "colors": ["白色", "黃色", "藍色","綠色","紫色"],
     "characteristics": "頂尖彈性、極速反應、極細線徑",
     "gauge": "0.61mm",
     "description": "VICTOR 最細的羽球線，極小阻力帶來巔峰的回彈表現，每一拍都能激發出清亮的爆破音，適合手感細膩且追求極致速度的選手。",
@@ -282,7 +287,7 @@ const APP_DATA = {
     "imgSrc": "/images/VS-65.webp",
     "name": "VS-65",
     "price": 280,
-    "colors": ["白", "黃", "橘"],
+    "colors": ["白", "黃", "橘","藍","綠","金黃"],
     "characteristics": "手感柔韌、精準控制、全能表現",
     "gauge": "0.65mm",
     "description": "具備高度韌性的芯層，提供極佳的持球感。在擊球瞬間能感受到細膩的反饋，適合著重控球技巧與變換球路的拉吊型球友。",
@@ -321,7 +326,7 @@ const APP_DATA = {
     "imgSrc": "/images/Z65.webp",
     "name": "Z65 Premium",
     "price": 350,
-    "colors": ["桃紅"],
+    "colors": ["白","螢光黃","桃紅"],
     "characteristics": "耐久控制、剛柔並濟、傳統手感",
     "gauge": "0.65mm",
     "description": "針對厭倦傳統粗線枯燥打感的球友設計。0.65mm 線徑結合全新技術，在維持高水準耐用度的同時，保留了極佳的擊球樂趣與高彈性表現。",
@@ -360,7 +365,7 @@ const APP_DATA = {
     "imgSrc": "/images/ION65.jpg",
     "name": "ION 65",
     "price": 340,
-    "colors": ["白", "黃", "藍", "水藍", "綠","桃紅","黑"],
+    "colors": ["白", "黃", "寶藍", "淺藍", "綠","桃紅","黑"],
     "characteristics": "全方位滿格、高彈力、清脆金屬音",
     "gauge": "0.65mm",
     "description": "被廣大球友譽為「神線」。採用高彈力超薄尼龍複絲中心芯與特殊編織工藝，在 0.65mm 的極細線徑下，達成彈性、控制力與擊球音的完美平衡，手感極佳且具爆發力。",
@@ -397,8 +402,8 @@ const APP_DATA = {
     "brandName": "VICTOR",
     "imgSrc": "/images/VS-69.webp",
     "name": "VS-69",
-    "price": 300,
-    "colors": ["粉", "黃", "藍"],
+    "price": 280,
+    "colors": ["白","粉", "橘", "紫藍","淺藍"],
     "characteristics": "高耐用性、穩定控制、經濟實惠",
     "gauge": "0.69mm",
     "description": "採用高強度多絲纖維搭配特殊的耐磨塗層技術。0.69mm 的均衡線徑在維持良好耐用度的同時，提供了柔和且紮實的擊球感受。其優異的保磅性與穩定的控球表現，是追求高性價比球友的理想選擇。",
@@ -483,7 +488,7 @@ const App = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [view]);
-  
+
   // PWA 註冊與安裝偵測
   useEffect(() => {
     // 註冊 Service Worker
@@ -679,28 +684,30 @@ const App = () => {
                   <div className="flex gap-2 items-center">
                     <span className="text-2xl font-black text-blue-600">NT$ {selectedProduct.price}</span>
                     <span className="text-sm text-gray-400">/ 包</span>
+
                   </div>
                 </div>
                 <button 
-                  onClick={() => toggleCompare(selectedProduct)}
-                  className={`flex text-sm font-bold p-3 rounded-2xl transition-all ${comparisonCart.find(p => p.id === selectedProduct.id) ? 'bg-blue-600 text-white' : 'bg-blue-50 text-blue-700'}`}
-                > 
-                  <Scale size={20} />加入比較清單
+                  onClick={(e) => { e.stopPropagation(); toggleCompare(selectedProduct); }}
+                  className={` p-1.5 rounded-full ring-2 ring-blue-100 transition-all ${comparisonCart.find(p => p.id === selectedProduct.id) ? 'bg-blue-600 text-white' : 'bg-white text-gray-400'}`}
+                >
+                  {comparisonCart.find(p => p.id === selectedProduct.id) ? <Scale size={25} /> : <Plus size={25} />}
                 </button>
               </div>
-
+              
+              
               <div className="grid grid-cols-2 gap-3 mb-6">
                 <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-xl">
                   <Target size={18} className="text-gray-400" />
                   <div>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wider">線徑</p>
+                    <p className="text-[14px] text-gray-500 uppercase tracking-wider">線徑</p>
                     <p className="text-sm font-bold">{selectedProduct.gauge}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-xl">
                   <ShieldCheck size={18} className="text-gray-400" />
                   <div>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wider">定位</p>
+                    <p className="text-[14px] text-gray-500 uppercase tracking-wider">定位</p>
                     <p className="text-sm font-bold">{selectedProduct.category}</p>
                   </div>
                 </div>
@@ -708,33 +715,37 @@ const App = () => {
 
               <div className="space-y-4">
                 <div>
-                  <h4 className="text-xs font-bold text-gray-400 uppercase mb-2">特性介紹</h4>
+                  <h4 className="text-sm font-bold text-gray-400 uppercase mb-2">特性介紹</h4>
                   <p className="font-black text-slate-800 leading-relaxed text-lg italic">
                     「{selectedProduct.characteristics}」
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-gray-400 uppercase mb-2">提供顏色</h4>
+                  <h4 className="text-sm font-bold text-gray-400 uppercase mb-2">提供顏色<span className='text-xs'>(顏色請依現場為主)</span></h4>
                   <div className="flex flex-wrap gap-2">
                     {selectedProduct.colors.map(color => (
-                      <span key={color} className={`inline-flex items-center justify-center  px-4 py-1.5 rounded-full text-xs font-bold shadow-sm ${getTagColor(color)}`}>
+                      <span key={color} className={`inline-flex items-center justify-center  px-4 py-1.5 rounded-full text-sm font-bold shadow-sm ${getTagColor(color)}`}>
                         {color}
                       </span>
                     ))}
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-gray-400 uppercase mb-2">詳細介紹</h4>
+                  <h4 className="text-sm font-bold text-gray-400 uppercase mb-2">詳細介紹</h4>
                   <p className="text-gray-600 leading-relaxed text-sm">
                     {selectedProduct.description}
                   </p>
                 </div>
               </div>
+              
+                <button 
+                  onClick={() => toggleCompare(selectedProduct)}
+                  className={`w-full mt-8 py-4 rounded-2xl font-bold flex items-center justify-center transition-all ${comparisonCart.find(p => p.id === selectedProduct.id) ? 'bg-blue-600 text-white' : 'bg-blue-100 text-blue-700'}`}
+                > 
+                  <Scale size={20} />加入比較清單
+                </button>
 
-              <button className="w-full mt-8 bg-slate-900 text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-2">
-                <ShoppingCart size={20} />
-                聯絡大自在預約穿線
-              </button>
+              
             </div>
 
             {/* Price Warning Hint */}
@@ -836,6 +847,13 @@ const App = () => {
                     </div>
                   </div>
                 ))}
+                  <div className={`flex justify-between items-center p-4 bg-white`}>
+                    <div className="flex items-center gap-3">
+                      <Clock size={16} className="text-gray-400" />
+                      <span className="text-sm font-bold text-slate-700">正常約3~4天</span>
+                    </div>
+            
+                  </div>
               </div>
 
               <div className="p-4 bg-amber-50/50 border-t border-amber-100/50">
@@ -888,8 +906,16 @@ const App = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4">{APP_DATA.shop.name}</h3>
-                
+                <div className="flex justify-between items-center mb-4">
+                <h3 className="text-xl font-bold">{APP_DATA.shop.name}</h3>
+                <button 
+                  onClick={() => window.open("https://lin.ee/q79JRRpK", "_blank")}
+                  className="cursor-pointer flex text-sm font-bold p-3 rounded-2xl transition-all bg-[#06C755] hover:bg-[#05b34d] text-white "
+                > 
+                 <FaLine className="w-5 h-5" />
+                  加入官方LINE
+                </button>
+                </div>
                 <div className="space-y-4">
                   <div className="flex gap-4">
                     <div className="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center text-blue-600 shrink-0">
